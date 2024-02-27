@@ -1,0 +1,220 @@
+
+
+.adminmenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    max-height: max-content;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    overflow-y: scroll; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+  .logo{
+  
+     height: 150px;
+  width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+    img{
+      height: 100px;
+      object-fit: cover;
+     }
+  }
+  
+  .items{
+  
+  
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: grey;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  
+    
+  }
+    &::-webkit-scrollbar {
+          width: 2px; 
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background-color:grey  ; 
+          border-radius: 5px; 
+        }
+      
+        &::-webkit-scrollbar-track {
+          background-color:  rgb(235, 225, 225); 
+        }
+      .item{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 10px;
+        
+          &:hover{
+            color: white;
+        }
+
+        .submenu{
+          padding: 2px;
+          display: flex;
+          flex-direction: column;
+         gap: 10px;
+
+          .sublink{
+            text-decoration: none;
+            padding: 2px;
+
+            h5{
+              padding: 4px;
+              border-radius: 2px;
+              color: grey;
+              font-size: 15px;
+            }
+
+
+            :hover{
+              background-color: grey;
+              color: white;
+            }
+          }
+        }
+          .title{
+              font-size: 12px;
+              font-weight: 200;
+              color: white;
+          }
+          .listItem{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              padding: 10px;
+              border-radius: 5px;
+              text-decoration: none;
+              color: grey;
+
+              .icon{
+                font-size: 24px;
+              }
+  
+              &:hover{
+                  background:linear-gradient(135deg, rgb(75, 102, 118) 16%, rgb(91, 150, 168)100%);
+             color: white;
+                }
+          }
+      }
+  }
+  .adminmobilemenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    max-height: max-content;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    overflow-y: scroll; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .active {
+      left: 0; 
+    }
+  
+  .logo{
+  
+     height: 150px;
+  width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+    img{
+      height: 100px;
+      object-fit: cover;
+     }
+  }
+  
+  .items{
+  
+  
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: grey;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    
+  }
+    &::-webkit-scrollbar {
+          width: 2px; 
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background-color:grey  ; 
+          border-radius: 5px; 
+        }
+      
+        &::-webkit-scrollbar-track {
+          background-color:  rgb(235, 225, 225); 
+        }
+      .item{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          // margin-bottom: 10px;
+        
+          &:hover{
+            color: white;
+        }
+
+        
+          .title{
+              font-size: 12px;
+              font-weight: 200;
+              color: white;
+          }
+          .listItem{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              // padding: 10px;
+              border-radius: 5px;
+              text-decoration: none;
+              color: grey;
+
+              .icon{
+                font-size: 24px;
+              }
+  
+              &:hover{
+                  background:linear-gradient(135deg, rgb(75, 102, 118) 16%, rgb(91, 150, 168)100%);
+             color: white;
+                }
+          }
+      }
+  }
+
+  @media (max-width: 600px) {
+    .adminmenu {
+      display: none;
+    }
+  
+   
+  }

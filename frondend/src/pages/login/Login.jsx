@@ -1,5 +1,5 @@
 
-import './login.css'
+import './login.scss';
 
 
 
@@ -23,7 +23,11 @@ const Login = () => {
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" name="password" />
         </div>
+        <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
         <button type="submit">Login</button>
+        <button type="submit">Register New Student</button>
+        </div>
+  
     </form>
     </div>
     </div>
